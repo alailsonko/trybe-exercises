@@ -1,0 +1,17 @@
+h1 {
+    font-size: 65px;
+    color: orange;
+}
+p, ul {
+    background-color: cyan;
+}
+.amarelo {
+ color: yellow;
+}      
+.red {
+ color: red;
+}      
+.brown {
+ color: brown;
+}
+ 
