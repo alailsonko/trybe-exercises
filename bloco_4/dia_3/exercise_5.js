@@ -12,8 +12,8 @@ function triangulo(n){
             }
 	   if(count % 2 !== 0) {
            for (let j = 0; j < count; j++){
-		
-		   
+
+
 		   if((j === 0) || (j === count - 1) || (count === n)) {
 		    array.push('*')
 		   } else  {
@@ -25,12 +25,13 @@ function triangulo(n){
            count += 1
            countSpace--
            triArray.push(array.join(''))
- 
+
    }
         return triArray.join('\n')
 }
- 
+console.time('triangulo') 
 triangulo(5)
+console.timeEnd('triangulo')
 triangulo(7)
 triangulo(9)
 triangulo(11)
@@ -54,7 +55,7 @@ rl.question("click enter",function(s) {
         console.log(triangulo(21), '\n');
         console.log(triangulo(23), '\n');
         console.log(triangulo(25), '\n');
-        console.log(triangulo(27), '\n');
+        console.log(triangulo(25), '\n');
 	console.log('my triangle')
         rl.close();
 });

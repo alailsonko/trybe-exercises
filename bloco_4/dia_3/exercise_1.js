@@ -4,7 +4,7 @@ function square(n){
       let array = []
 
      for (let j = 0; j < n; j++){
-           array.push('*')
+           array.push('* ')
     }
 
       arraySquare.push(array.join(''))
@@ -21,12 +21,14 @@ const rl = readline.createInterface({
 });
 
 rl.question("tamanho do seu quadrado ? ", function(n) {
-        console.log(square(n));
+	console.time("benchmark")
+	console.log(square(n))
+	console.timeEnd("benchmark")
+	console.log("tamanho da base:", n)
         rl.close();
 });
 
 rl.on("close", function() {
-    console.log("\nBYE BYE !!!");
     process.exit(0);
 });
 
